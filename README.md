@@ -21,4 +21,4 @@ There must also be an 'Admin' role, which will be determined through the databas
 Without authorization should only be able to register and log in.
 Authentication and Authorization is done with Json Web Tokens.
 Ms sql database is used.
-Entity Framework is used.
+Entity Framework is used. 
