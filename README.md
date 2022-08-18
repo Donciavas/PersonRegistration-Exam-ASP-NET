@@ -1,5 +1,15 @@
-# PersonRegistrationAspNet.Api
-Task Progress:
+.net 5 core
+
+NuGet pacages were used: 
+
+1)Microsoft.EntityFrameworkCore version 6.0.8
+
+2)Microsoft.EntityFrameworkCore.SqlServer version 6.0.8
+
+3)Microsoft.EntityFrameworkCore.Tools version 6.0.8
+
+Task description
+
 User must be able to register.
 After registration, a User is created with the default role 'User'.
 The user must be able to generate information about himself, in which ALL fields are mandatory (Personal information), the user must not be able to generate information about more than one person.
@@ -8,9 +18,7 @@ When registering a person, it must be mandatory to upload a profile photo, its s
 It must be possible to get all the information about the uploaded person according to his ID (the photo is returned as a byte array).
 The user must not be able to update information other than his own, for the sake of convenience, let's say that with each request "from the frontend" the User's ID will come.
 There must also be an 'Admin' role, which will be determined through the database and it will have an endpoint through which it can delete the user by ID (deleting the user also deletes the person's info)
-Offline should only be able to register and log in
+Without authorization should only be able to register and log in
 Authentication and Authorization is done with Json Web Tokens.
-Mssql database is used.
+Ms sql database is used.
 Entity Framework is used.
-# PersonRegistration
-# PersonRegistrationSys
