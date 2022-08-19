@@ -1,12 +1,4 @@
-.net 5 core
-
-NuGet pacages were used: 
-
-1)Microsoft.EntityFrameworkCore version 6.0.8
-
-2)Microsoft.EntityFrameworkCore.SqlServer version 6.0.8
-
-3)Microsoft.EntityFrameworkCore.Tools version 6.0.8
+.NET 5 core
 
 Task description
 
@@ -22,3 +14,21 @@ Without authorization should only be able to register and log in.
 Authentication and Authorization is done with Json Web Tokens.
 Ms sql database is used.
 Entity Framework is used. 
+
+NuGet packages were used: 
+
+1) Microsoft.EntityFrameworkCore version 6.0.8
+
+2) Microsoft.EntityFrameworkCore.SqlServer version 6.0.8
+
+3) Microsoft.EntityFrameworkCore.Tools version 6.0.8
+
+4) Microsoft.AspNetCore.Http.Features version 5.0.17
+
+5) Microsoft.EntityFrameworkCore.Design version 6.0.8
+
+6) Microsoft.AspNetCore.Authentication.JwtBearer version 6.0.8
+
+7) Moq version 4.18.2
+
+8) Moq.EntityFrameworkCore version 6.0.1.4
