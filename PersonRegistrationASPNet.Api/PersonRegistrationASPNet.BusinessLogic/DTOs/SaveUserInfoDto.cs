@@ -6,10 +6,10 @@ namespace PersonRegistrationASPNet.BusinessLogic.DTOs
     public class SaveUserInfoDto 
     {
         [Required]
-        [ChechWhiteSpaces]
+        [CheckForWhiteSpaces]
         public string? Name { get; set; }
         [Required]
-        [ChechWhiteSpaces]
+        [CheckForWhiteSpaces]
         public string? LastName { get; set; }
         public PersonalNumberDto? PersonalId { get; set; }
         [Required]
@@ -17,7 +17,7 @@ namespace PersonRegistrationASPNet.BusinessLogic.DTOs
         public EmailDto? Email { get; set; }
         public virtual ImageRequestDto? ImageRequest { get; set; }
         [Required]
-        [ChechWhiteSpaces]
+        [CheckForWhiteSpaces]
         public string? City { get; set; }
         [Required]
         public string? Street { get; set; }

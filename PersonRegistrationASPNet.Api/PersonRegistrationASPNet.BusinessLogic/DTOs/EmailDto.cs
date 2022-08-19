@@ -7,7 +7,7 @@ namespace PersonRegistrationASPNet.BusinessLogic.DTOs
     {
         [Required]
         [EmailValidation]
-        [ChechWhiteSpaces]
+        [CheckForWhiteSpaces]
         public string? Email { get; set; }
     }
 }

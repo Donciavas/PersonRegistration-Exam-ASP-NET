@@ -7,11 +7,11 @@ namespace PersonRegistrationASPNet.BusinessLogic.DTOs
     {
         [Required]
         [MinInputLength(4)]
-        [ChechWhiteSpaces]
+        [CheckForWhiteSpaces]
         public string? Username { get; set; }
         [Required]
         [MinInputLength(8)]
-        [ChechWhiteSpaces]
+        [CheckForWhiteSpaces]
         public string? Password { get; set; }
     }
 }

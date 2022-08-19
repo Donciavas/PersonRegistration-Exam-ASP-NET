@@ -35,16 +35,16 @@ namespace PersonRegistrationASPNet.Database.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
-                    b.Property<int>("houseNumber")
-                        .HasColumnType("int");
-
                     b.Property<string>("Street")
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<int>("houseNumber")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Address");
+                    b.ToTable("Address", (string)null);
                 });
 
             modelBuilder.Entity("PersonRegistrationASPNet.Database.Models.User", b =>
@@ -78,7 +78,7 @@ namespace PersonRegistrationASPNet.Database.Migrations
 
                     b.HasIndex("UserInfoId");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("PersonRegistrationASPNet.Database.Models.UserInfo", b =>
@@ -117,7 +117,7 @@ namespace PersonRegistrationASPNet.Database.Migrations
 
                     b.HasIndex("AddressId");
 
-                    b.ToTable("UserInfo");
+                    b.ToTable("UserInfo", (string)null);
                 });
 
             modelBuilder.Entity("PersonRegistrationASPNet.Database.Models.User", b =>

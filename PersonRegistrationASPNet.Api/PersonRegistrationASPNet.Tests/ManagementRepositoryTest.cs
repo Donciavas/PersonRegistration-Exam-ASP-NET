@@ -314,7 +314,7 @@ namespace PersonRegistrationASPNet.Tests
 
         }
         [Theory, AutoData]
-        public void ManagementRepository_ChangeUserHauseNumber_ReturnsDto_Returns_Correct_Message(int houseNumber, Guid userId, User user)
+        public void ManagementRepository_ChangeUserHouseNumber_ReturnsDto_Returns_Correct_Message(int houseNumber, Guid userId, User user)
         {
             var users = new List<User>();
             users.Add(user);
@@ -329,7 +329,7 @@ namespace PersonRegistrationASPNet.Tests
 
         }
         [Theory, AutoData]
-        public void ManagementRepository_ChangeUserHauseNumber_ReturnsDto_Returns_true(int houseNumber, User user)
+        public void ManagementRepository_ChangeUserHouseNumber_ReturnsDto_Returns_true(int houseNumber, User user)
         {
             var users = new List<User>();
             users.Add(user);

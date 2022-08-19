@@ -293,25 +293,25 @@ namespace PersonRegistrationASPNet.Tests
             Assert.Equal("BadRequestObjectResult", type?.Name);
         }
         [Theory, AutoData]
-        public void ManagementController_ChangeHauseNumber_ResposeDto_Returns_IsSuccess_True(Guid userId, InputIntDto houseNumber)
+        public void ManagementController_ChangeHouseNumber_ResposeDto_Returns_IsSuccess_True(Guid userId, InputIntDto houseNumber)
         {
             var managementServiceMoq = new Mock<IManagementService>();
             var sut = new ManagementController(managementServiceMoq.Object);
             managementServiceMoq.Setup(x => x.ChangeUserHouseNumber(It.IsAny<int>(), It.IsAny<Guid>())).Returns(new ResponseDto(true, "message"));
 
-            var response = sut.ChangeHauseNumber(userId, houseNumber);
+            var response = sut.ChangeHouseNumber(userId, houseNumber);
             var isSuccess = response.Value?.IsSuccess;
 
             Assert.True(isSuccess);
         }
         [Theory, AutoData]
-        public void ManagementController_ChangeHauseNumber_Returns_BadRequest_Type_Name(Guid userId, InputIntDto houseNumber)
+        public void ManagementController_ChangeHouseNumber_Returns_BadRequest_Type_Name(Guid userId, InputIntDto houseNumber)
         {
             var managementServiceMoq = new Mock<IManagementService>();
             var sut = new ManagementController(managementServiceMoq.Object);
             managementServiceMoq.Setup(x => x.ChangeUserHouseNumber(It.IsAny<int>(), It.IsAny<Guid>())).Returns(new ResponseDto(false, "message"));
 
-            var response = sut.ChangeHauseNumber(userId, houseNumber);
+            var response = sut.ChangeHouseNumber(userId, houseNumber);
             var type = response?.Result?.GetType();
 
             Assert.Equal("BadRequestObjectResult", type?.Name);

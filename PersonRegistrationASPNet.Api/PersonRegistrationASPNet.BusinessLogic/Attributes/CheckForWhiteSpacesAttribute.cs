@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace PersonRegistrationASPNet.BusinessLogic.Attributes
 {
-    public class ChechWhiteSpacesAttribute : ValidationAttribute
+    public class CheckForWhiteSpacesAttribute : ValidationAttribute
     {
         protected override ValidationResult? IsValid(
            object? value, ValidationContext validationContext)

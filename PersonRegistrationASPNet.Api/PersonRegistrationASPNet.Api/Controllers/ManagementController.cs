@@ -117,9 +117,9 @@ namespace PersonRegistrationASPNet.Api.Controllers
                 return BadRequest(response.Message);
             return response;
         }
-        [HttpPut("ChangeHauseNumber")]
+        [HttpPut("ChangeHouseNumber")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin, User")]
-        public ActionResult<ResponseDto> ChangeHauseNumber([FromQuery] Guid userId, InputIntDto houseNumber)
+        public ActionResult<ResponseDto> ChangeHouseNumber([FromQuery] Guid userId, InputIntDto houseNumber)
         {
             var response = _managementService.ChangeUserHouseNumber(houseNumber.Number, userId);
             if (!response.IsSuccess)

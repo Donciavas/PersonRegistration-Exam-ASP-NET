@@ -16,7 +16,7 @@ namespace PersonRegistrationASPNet.Database.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     City = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
                     Street = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
-                    HauseNumber = table.Column<int>(type: "int", nullable: true),
+                    HouseNumber = table.Column<int>(type: "int", nullable: true),
                     ApartmentNumber = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
