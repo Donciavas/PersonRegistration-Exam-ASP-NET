@@ -1,3 +1,5 @@
+.NET 5 
+
 Task description
 
 User must be able to register.
