@@ -38,7 +38,7 @@ namespace PersonRegistrationASPNet.BusinessLogic.Services
                 {
                     City = setUserInfoDto?.City,
                     Street = setUserInfoDto?.Street,
-                    houseNumber = setUserInfoDto!.Hause!.Number,
+                    houseNumber = setUserInfoDto!.House!.Number,
                     ApartmentNumber = setUserInfoDto.Apartment!.Number
                 }
             };

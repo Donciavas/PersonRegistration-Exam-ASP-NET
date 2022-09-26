@@ -40,7 +40,7 @@ namespace PersonRegistrationASPNet.Tests.Customization.SpecimenBuilders
                     ImageRequest = new ImageRequestDto { ProfileImage = inputFile },
                     City = "Testoniskes",
                     Street = "testu g.",
-                    Hause = new InputIntDto() { Number = 1},
+                    House = new InputIntDto() { Number = 1},
                     Apartment = new InputIntDto() { Number = 1 }
                 };
                 return seveUserInfoDto;

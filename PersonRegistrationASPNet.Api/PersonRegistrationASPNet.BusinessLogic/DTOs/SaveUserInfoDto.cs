@@ -21,7 +21,7 @@ namespace PersonRegistrationASPNet.BusinessLogic.DTOs
         public string? City { get; set; }
         [Required]
         public string? Street { get; set; }
-        public InputIntDto? Hause { get; set; }
+        public InputIntDto? House { get; set; }
         public InputIntDto? Apartment { get; set; }
 
     }
