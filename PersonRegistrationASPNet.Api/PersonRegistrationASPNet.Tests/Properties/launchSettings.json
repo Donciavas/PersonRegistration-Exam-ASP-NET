@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "PersonRegistrationASPNet.Tests": {
+      "commandName": "Project"
+    }
+  }
+}
