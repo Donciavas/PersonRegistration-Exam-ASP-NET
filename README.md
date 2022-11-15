@@ -1,5 +1,3 @@
-.NET 5 
-
 Task description
 
 User must be able to register.
@@ -11,24 +9,41 @@ It must be possible to get all the information about the uploaded person accordi
 The user must not be able to update information other than his own, for the sake of convenience, let's say that with each request "from the frontend" the User's ID will come.
 There must also be an 'Admin' role, which will be determined through the database and it will have an endpoint through which it can delete the user by ID (deleting the user also deletes the person's info)
 Without authorization should only be able to register and log in.
+
 Authentication and Authorization is done with Json Web Tokens.
-Ms sql database is used.
+
+Microsoft SQL Server Management Studio (SSMS) database is used.
+
 Entity Framework is used. 
 
 NuGet packages were used: 
 
-1) Microsoft.EntityFrameworkCore version 6.0.8
+1) Microsoft.EntityFrameworkCore version 6.0.7
 
-2) Microsoft.EntityFrameworkCore.SqlServer version 6.0.8
+2) Microsoft.EntityFrameworkCore.SqlServer version 6.0.7
 
-3) Microsoft.EntityFrameworkCore.Tools version 6.0.8
+3) Microsoft.EntityFrameworkCore.Tools version 6.0.7
 
 4) Microsoft.AspNetCore.Http.Features version 5.0.17
 
-5) Microsoft.EntityFrameworkCore.Design version 6.0.8
+5) Microsoft.EntityFrameworkCore.Design version 6.0.7
 
-6) Microsoft.AspNetCore.Authentication.JwtBearer version 6.0.8
+6) Microsoft.AspNetCore.Authentication.JwtBearer version 6.0.7
 
-7) Moq version 4.18.2
+7) Moq version 4.18.1
 
 8) Moq.EntityFrameworkCore version 6.0.1.4
+
+9) Microsoft.NET.Test.SDK version 17.4.0
+
+10) AutoFixture.Xunit2 version 4.17.0
+
+11) xUnit version 2.4.1
+
+12) xunit.runner.visualstudio version 2.4.3
+
+13) System.Drawing.Common version 6.0.0
+
+14) Swashbuckle.AspNetCore version 6.2.3
+
+15) coverlet.collector version 3.1.0
