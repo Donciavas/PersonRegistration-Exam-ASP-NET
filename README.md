@@ -2,7 +2,7 @@ Final Exam Task description
 
 User must be able to register.
 After registration, a User is created with the default role 'User'.
-The user must be able to create information about himself, in which ALL fields are mandatory (Personal information), the user must not be able to generate information about more than one person.
+The user must be able to create information about himself, in which ALL fields are mandatory (Personal information) and must not be able to generate information about more than one person.
 There must be different endpoints to update EACH of the fields, e.g.: Name, social security code, phone number, city (cannot be updated to an empty field or whitespace)
 When registering a person, it must be mandatory to upload a profile photo, its size must be reduced to 200x200 (if the photo is too small, it will be stretched to 200x200).
 It must be possible to get all the information about the uploaded person according to his ID (the photo is returned as a byte array).
