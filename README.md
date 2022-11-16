@@ -1,4 +1,4 @@
-Task description
+Final Exam Task description
 
 User must be able to register.
 After registration, a User is created with the default role 'User'.
