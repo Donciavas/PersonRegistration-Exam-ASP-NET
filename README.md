@@ -8,6 +8,7 @@ When registering a person, it must be mandatory to upload a profile photo, its s
 It must be possible to get all the information about the uploaded person according to his ID (the photo is returned as a byte array).
 The user must not be able to update information other than his own, for the sake of convenience, let's say that with each request "from the frontend" the User's ID will come.
 There must also be an 'Admin' role, which will be determined through the database and it will have an endpoint through which it can delete the user by ID (deleting the user also deletes the person's info)
+
 Without authorization should only be able to register and log in.
 
 Authentication and Authorization is done with Json Web Tokens.
