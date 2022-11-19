@@ -1,5 +1,7 @@
 Final Exam Task description
 
+*Important Notice* In order to create Database, write "Update-Database" in npm console.
+
 User must be able to register.
 After registration, a User is created with the default role 'User'.
 The user must be able to create information about himself, in which ALL fields are mandatory (Personal information) and must not be able to generate information about more than one person.
