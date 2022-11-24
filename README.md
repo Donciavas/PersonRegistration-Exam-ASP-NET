@@ -1,7 +1,5 @@
 Final Exam Task description
 
-*Important Notice*. In order to create new Database, write "Update-Database" in npm console.
-
 User must be able to register.
 After registration, a User is created with the default role 'User'.
 The user must be able to create information about himself, in which ALL fields are mandatory (Personal information) and must not be able to generate information about more than one person.
@@ -18,6 +16,9 @@ Authentication and Authorization is done with Json Web Tokens.
 Microsoft SQL Server Management Studio (SSMS) database is used.
 
 Entity Framework is used. 
+
+*Important Notice* Result of the program code files and database script is in file 'StudentAdministrationDB_CreateFile.sql'. Just copy n paste to SQL server database query.
+In order to create new database, if needed, write 'Update-Database' in npm console.
 
 NuGet packages were used: 
 
