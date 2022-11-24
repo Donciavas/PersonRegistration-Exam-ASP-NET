@@ -3,7 +3,6 @@ using PersonRegistrationASPNet.Database.Models;
 using PersonRegistrationASPNet.Database.Repositories;
 using System.Security.Cryptography;
 
-
 namespace PersonRegistrationASPNet.BusinessLogic.Services
 {
     public class UserService : IUserService
@@ -14,7 +13,6 @@ namespace PersonRegistrationASPNet.BusinessLogic.Services
         {
             _repository = repository;
         }
-
         public ResponseDto Login(string username, string password, out string role)
         {
             var account = _repository?.GetUser(username);
@@ -35,7 +33,6 @@ namespace PersonRegistrationASPNet.BusinessLogic.Services
             _repository.SaveUser(user);
             return new ResponseDto(true, "User was created ");
         }
-
         private User CreateUser(string username, string password)
         {
             CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
@@ -47,10 +44,8 @@ namespace PersonRegistrationASPNet.BusinessLogic.Services
                 PasswordSalt = passwordSalt,
                 Role = "User"
             };
-
             return user;
         }
-
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
             using var hmac = new HMACSHA512();
@@ -58,7 +53,6 @@ namespace PersonRegistrationASPNet.BusinessLogic.Services
             passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
 
         }
-
         private bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
         {
 
@@ -67,7 +61,6 @@ namespace PersonRegistrationASPNet.BusinessLogic.Services
 
             return computedHash.SequenceEqual(passwordHash);
         }
-
         public Guid GetUserID(string username)
         {
             var user = _repository.GetUser(username);

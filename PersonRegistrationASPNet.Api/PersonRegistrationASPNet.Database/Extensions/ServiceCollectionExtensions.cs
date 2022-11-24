@@ -4,7 +4,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PersonRegistrationASPNet.Database.Repositories;
 
-
 namespace PersonRegistrationASPNet.Database.Extensions
 {
     public static class ServiceCollectionExtensions
