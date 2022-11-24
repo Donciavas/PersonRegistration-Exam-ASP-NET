@@ -1,6 +1,6 @@
 Final Exam Task description
 
-*Important Notice* In order to create Database, write "Update-Database" in npm console.
+*Important Notice*. In order to create new Database, write "Update-Database" in npm console.
 
 User must be able to register.
 After registration, a User is created with the default role 'User'.
