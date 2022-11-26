@@ -17,7 +17,7 @@ Microsoft SQL Server Management Studio (SSMS) database is used.
 
 Entity Framework is used. 
 
----*Important Notice*--- Result of the program code files and database script is in file 'PersonRegASPNET_CreateFile.sql'. Just copy n paste to SQL server database query.
+---*Important Notice*--- Result of the program code files and database script is in file 'PersonRegASPNET_CreateDBFile.sql'. Just copy n paste to SQL server database query.
 In order to create new database, if needed, write 'Update-Database' in npm console.
 
 NuGet packages were used: 
