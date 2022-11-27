@@ -52,11 +52,12 @@ NuGet packages were used:
 
 15) coverlet.collector version 3.1.0
 
-What need to be fixed in this program (working on it): 
+---*Important Notice*--- What need to be fixed in this program (working on it): 
 
 1. Separate UnitsOfWork out of Repositories. After this I could easily separate all that Repository, Service 'Management<..>" blend into separate ones to accomplish single responsibility.
 2. Implement Field update through generics. 
 3. Redo XUnit tests :)
 
-Adding structure img: ![image](https://user-images.githubusercontent.com/96888736/204161930-fbc7d931-2e80-487f-9c12-367f1413d605.png)
+Adding structure img: 
+![image](https://user-images.githubusercontent.com/96888736/204161930-fbc7d931-2e80-487f-9c12-367f1413d605.png)
 
