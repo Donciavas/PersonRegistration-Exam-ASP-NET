@@ -58,6 +58,7 @@ NuGet packages were used:
 2. Implement Field update through generics. 
 3. Redo XUnit tests :)
 
-Adding structure img: 
+Adding structure img:
+
 ![image](https://user-images.githubusercontent.com/96888736/204161930-fbc7d931-2e80-487f-9c12-367f1413d605.png)
 
