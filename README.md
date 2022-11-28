@@ -20,6 +20,7 @@ Entity Framework is used.
 ---*Important Notice*--- Result of the program code files and database script is in file 'PersonRegASPNET_CreateDBFile.sql'. Just copy n paste to SQL server database query. In order to create new database, if needed, write 'Update-Database' in npm console.
 
 *Log in with administrators account and copy paste token without quotes to authorize (watch image below):
+
 {
   "username": "Admin",
   "password": "Administrator"
