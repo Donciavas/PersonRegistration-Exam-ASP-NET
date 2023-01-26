@@ -60,7 +60,7 @@ NuGet packages were used:
 
 15) coverlet.collector version 3.1.0
 
----*Important Notice*--- What need to be fixed in this program (working on it): 
+---*Important Notice*--- What need to be fixed in this program: 
 
 1. Separate UnitsOfWork out of Repositories. After this I could easily separate all that Repository, Service 'Management<..>" blend into separate ones to accomplish single responsibility.
 2. Implement Field update through generics. 
